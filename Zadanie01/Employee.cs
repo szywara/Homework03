@@ -22,8 +22,8 @@ namespace Zadanie01
 
         public double RegisterTime (double time, double rate)
         {
-            double salary = 0;
-            if (time <= 8 && time > 0)
+            double salary;
+            if (time <= 8 && time >= 0)
             {
                 salary = time * rate;
             }
@@ -31,6 +31,7 @@ namespace Zadanie01
             {
                 salary = (time -8) * 2 * rate + 8 * rate;
             }
+            
             return salary;
         }
 

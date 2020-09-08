@@ -12,17 +12,20 @@ namespace Zadanie01
         static void Main(string[] args)
         {
             double time;
-
+            Employee emp1 = new Employee("Jan", "Nowak", 100);
+            double salary = 0;
+            Console.WriteLine("Podawaj godziny pracy każdego dnia, żeby dokonać wypłaty wpisz 0");
             do
             {
-                Employee emp1 = new Employee("Jan", "Nowak", 100);
-                Console.WriteLine("podaj czas pracy pracownika {0} {1}", emp1.Name, emp1.Surname);
+                Console.WriteLine("Podaj czas pracy pracownika {0} {1}", emp1.Name, emp1.Surname);
+                
                 time = Convert.ToDouble(Console.ReadLine());
-                double salary = emp1.RegisterTime(time, emp1.Rate);
-                emp1.PaySalary(salary);
+                
+                salary += emp1.RegisterTime(time, emp1.Rate);
+                
             } while (time>0);
-             
 
+            emp1.PaySalary(salary);
             Console.ReadLine();
         }
     }
