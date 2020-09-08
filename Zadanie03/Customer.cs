@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zadanie02
+namespace Zadanie03
 {
-
-    class PeselValidationResult
+    class Customer
     {
-      
-
-
+        private string frame;
+        private string lname;
+        private int priority;
 
     }
 }
