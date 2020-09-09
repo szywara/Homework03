@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,20 +11,17 @@ namespace Zadanie02
     {
         static void Main(string[] args)
         {
-            string pesel = "88091203625";
+            string pesel = "88091203652";
+            string peselB = "88050211568";
+            
+            PeselValidationResult check = new PeselValidationResult();
 
-            PeselValidationResult pesel1 = new PeselValidationResult();
+            check.CheckPesel(pesel);
+            check.CheckPesel(peselB);
 
-            pesel1.date = "";
-            pesel1.isValid = false;
-            pesel1.message = "";
-            pesel1.sex = Sex.Kobieta;
+            Console.WriteLine("Wprowadź numer PESEL");
+            check.CheckPesel(Console.ReadLine());
 
-            Console.WriteLine(pesel1.GetDate(pesel));
-
-            pesel1.date = pesel1.GetDate(pesel);
-
-            Console.WriteLine(pesel1.date);
 
             Console.ReadLine();
         }
