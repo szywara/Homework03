@@ -22,11 +22,11 @@ namespace Zadanie01
                 
                 time = Convert.ToDouble(Console.ReadLine());
 
-                emp1.Salary += emp1.RegisterTime(time, emp1.Rate);
+                emp1.RegisterTime(time);
                 
             } while (time>0);
 
-            emp1.PaySalary(emp1.Salary);
+            emp1.PaySalary();
             Console.ReadLine();
         }
     }

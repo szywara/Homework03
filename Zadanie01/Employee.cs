@@ -15,13 +15,13 @@ namespace Zadanie01
 
         public Employee (string name, string surname, double rate, double salary=0)
         {
-            this.name = name; this.surname = surname;this.rate = rate; this.salary = salary;
+            this.name = name; this.surname = surname;this.rate = 100; this.salary = salary;
         }
         public string Name { get { return name; } }
         public string Surname { get { return surname; } }
         public double Rate { get { return rate; } }
-
-        public double RegisterTime (double time, double rate)
+        
+        public double RegisterTime (double time)
         {
             double onedaysalary;
             if (time <= 8 && time >= 0)
@@ -40,10 +40,11 @@ namespace Zadanie01
 
         public double Salary { get { return salary; }  }
 
-        public void PaySalary(double x)
+        public void PaySalary()
         {
 
-            Console.WriteLine("Należność po stronie pracodawcy wynosi {0:C2}",x);
+            Console.WriteLine("Należność po stronie pracodawcy wynosi {0:C2}",salary);
+            salary = 0;
         }
     }
 }
