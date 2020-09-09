@@ -11,10 +11,11 @@ namespace Zadanie01
         private string name;
         private string surname;
         private double rate;
+        private double salary;
 
-        public Employee (string name, string surname, double rate)
+        public Employee (string name, string surname, double rate, double salary=0)
         {
-            this.name = name; this.surname = surname;this.rate = rate;
+            this.name = name; this.surname = surname;this.rate = rate; this.salary = salary;
         }
         public string Name { get { return name; } }
         public string Surname { get { return surname; } }
@@ -22,18 +23,22 @@ namespace Zadanie01
 
         public double RegisterTime (double time, double rate)
         {
-            double salary;
+            double onedaysalary;
             if (time <= 8 && time >= 0)
             {
-                salary = time * rate;
+                onedaysalary = time * rate;
             }
             else
             {
-                salary = (time -8) * 2 * rate + 8 * rate;
+                onedaysalary = (time -8) * 2 * rate + 8 * rate;
             }
             
-            return salary;
+            return salary += onedaysalary;
         }
+
+        
+
+        public double Salary { get { return salary; } set { } }
 
         public void PaySalary(double x)
         {

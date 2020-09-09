@@ -10,7 +10,12 @@ namespace Zadanie02
     {
         static void Main(string[] args)
         {
+            string pesel = "88091203625";
 
+            
+
+            
+            Console.ReadLine();
         }
     }
 }

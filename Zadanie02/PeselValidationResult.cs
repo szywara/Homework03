@@ -19,7 +19,12 @@ namespace Zadanie02
         private string date;
         private string komunikat;
 
-        public bool CzyPoprawny { get { return czyPoprawny; } }
+        public string GetDate (string x)
+        {
+            string day = x[1].ToString();
+            Console.WriteLine(day);
+            return x;
+        }
         
 
 
