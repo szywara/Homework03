@@ -38,7 +38,7 @@ namespace Zadanie01
 
         
 
-        public double Salary { get { return salary; } set { } }
+        public double Salary { get { return salary; }  }
 
         public void PaySalary(double x)
         {
