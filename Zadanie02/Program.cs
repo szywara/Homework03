@@ -14,13 +14,14 @@ namespace Zadanie02
             string pesel = "88091203652";
             string peselB = "88050211568";
             
-            PeselValidationResult check = new PeselValidationResult();
-
-            check.CheckPesel(pesel);
-            check.CheckPesel(peselB);
+            //PeselValidationResult check = new PeselValidationResult();
+            Pesel check = new Pesel();
+            
+            check.Validate(pesel);
+            check.Validate(peselB);
 
             Console.WriteLine("Wprowadź numer PESEL");
-            check.CheckPesel(Console.ReadLine());
+            check.Validate(Console.ReadLine());
 
 
             Console.ReadLine();
