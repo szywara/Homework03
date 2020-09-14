@@ -11,7 +11,9 @@ namespace Zadanie03
     {
         static void Main(string[] args)
         {
-           
+            QueuePriority queuePriority = new QueuePriority();
+
+
         }
     }
 }
