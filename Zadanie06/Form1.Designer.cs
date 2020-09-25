@@ -121,7 +121,7 @@
             this.labelWynik.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelWynik.Location = new System.Drawing.Point(24, 266);
             this.labelWynik.Name = "labelWynik";
-            this.labelWynik.Size = new System.Drawing.Size(0, 29);
+            this.labelWynik.Size = new System.Drawing.Size(0, 26);
             this.labelWynik.TabIndex = 6;
             this.labelWynik.Click += new System.EventHandler(this.labelWynik_Click);
             // 
@@ -193,7 +193,6 @@
             this.comboBox4.Enabled = false;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
-            "Czarny",
             "Brązowy",
             "Czerwony",
             "Zielony",
